@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=1280; height=1000" >
-
+<meta name="viewport" content="width=1080">
 <style>
- 
- body    {overflow-y:scroll;}
+body    {overflow-y:scroll;}
 body    {overflow-x:scroll;}
 .test{
  
@@ -17,6 +15,7 @@ body    {overflow-x:scroll;}
 .my {
     font-size: 30pt;
 }
+
 
 body {
     background-color: #696969;
@@ -72,13 +71,16 @@ div.static9 {
     top: 350px;
 }div.pass {
     position: fixed;
-    left: 485px;
+    left: 465px;
     top: 600px;
+    font-size: pt;
+
 }
 div.static10 {
     position: fixed;
     left: 740px;
     top: 290px;
+
 }
 div.static11 {
     position: fixed;
@@ -266,7 +268,7 @@ div.column3 {
 <div class="bleh5">
    <input type="text" class="my"></div>
  <div class="bleh6">
-   <input type="text"class="my" ></b></div>
+   <input type="text"class="my" ></div>
 <div class="bleh7">
    <input type="text" class="my"></div>
 <div class="bleh8">
@@ -274,47 +276,47 @@ div.column3 {
 <div class="bleh9">
    <input type="text"class="my" ></div>
 <div class="static10">
-    <input type="button" value="Reduce by 5" onclick="addValue9();" class="test"/></div>
+</div>
 <div class="static11">
-    <input type="button" value="Reduce by 5" onclick="addValue1();" class="test"/></div>
+    <input type="button" value="Reduce by 5" onclick="modifyValue(1, 5);" class="test"/></div>
 <div class="static12">
-    <input type="button" value="Reduce by 5" onclick="addValue2();"class="test" /></div>
+    <input type="button" value="Reduce by 5" onclick="modifyValue(2, 5);"class="test" /></div>
 <div class="static13">
-    <input type="button" value="Reduce by 5" onclick="addValue3();"class="test" /></div>
+    <input type="button" value="Reduce by 5" onclick="modifyValue(3, 5);"class="test" /></div>
 <div class="static14">
-    <input type="button" value="Reduce by 5" onclick="addValue4();"class="test" /></div>
+    <input type="button" value="Reduce by 5" onclick="modifyValue(4, 5);"class="test" /></div>
 <div class="static15">
-    <input type="button" value="Reduce by 5" onclick="addValue5();"class="test" /></div>
+    <input type="button" value="Reduce by 5" onclick="modifyValue(5, 5);"class="test" /></div>
 <div class="static16">
-    <input type="button" value="Reduce by 5" onclick="addValue6();"class="test" /></div>
-<div class="static17">
-    <input type="button" value="Reduce by 5" onclick="addValue7();" class="test"/></div>
+    <input type="button" value="Reduce by 5" onclick="modifyValue(6, 5);"class="test" /></div>
+ <div class="static17"> 
+    <input type="button" value="Reduce by 5" onclick="modifyValue(7, 5);"class="test" /></div> 
 <div class="static18">
-    <input type="button" value="Reduce by 5" onclick="addValue8();" class="test"/></div>
+    <input type="button" value="Reduce by 5" onclick="modifyValue(8, 5);" class="test"/></div>
 <div class="static19">
-    <input type="button" value="Reduce by 5" onclick="addValue9();" class="test"/></div>
+    <input type="button" value="Reduce by 5" onclick="modifyValue(9, 5);" class="test"/></div>
 <div class="static20">
-    <input type="button" value="Reduce by 10" onclick="subValue1();"class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(1, 10);"class="test" /></div>
 <div class="static29">
-    <input type="button" value="Reduce by 10" onclick="subValue9();"class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(9, 10);"class="test" /></div>
 <div class="static21">
-    <input type="button" value="Reduce by 10" onclick="subValue2();"class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(2, 10);"class="test" /></div>
 <div class="static22">
-    <input type="button" value="Reduce by 10" onclick="subValue3();"class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(3, 10);"class="test" /></div>
 <div class="static23">
-    <input type="button" value="Reduce by 10" onclick="subValue4();"class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(4, 10);"class="test" /></div>
 <div class="static24">
-    <input type="button" value="Reduce by 10" onclick="subValue9();"class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(5, 10);"class="test" /></div>
 <div class="static25">
-    <input type="button" value="Reduce by 10" onclick="subValue6();"class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(6, 10);"class="test" /></div>
 <div class="static26">
-    <input type="button" value="Reduce by 10" onclick="subValue7();"class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(7, 10);"class="test" /></div>
 <div class="static27">
-    <input type="button" value="Reduce by 10" onclick="subValue8();" class="test"/></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(8, 10);" class="test"/></div>
 <div class="static28">
-    <input type="button" value="Reduce by 10" onclick="subValue5();" class="test" /></div>
+    <input type="button" value="Reduce by 10" onclick="modifyValue(5, 10);" class="test" /></div>
 <div class="pass">
-    <input type="button" value="End intiative pass" onclick="reduceValue1();reduceValue2();reduceValue3();reduceValue4();reduceValue5();reduceValue6();reduceValue7();reduceValue8();reduceValue9();" class="test" /></div>
+   <input type="button" class="my" value="End intiative pass" onclick="for (i=1; i<10; i++) { modifyValue(i, 10); };" />
 <div class="static">
     <input type="number" id="number1" name="quantity" class="mytext"  ><br></div>
 <div class="static1">
@@ -337,199 +339,11 @@ div.column3 {
 </form>
 </html>
 <script>
-function subValue1()
+function modifyValue(row, modifier)
 {
-    var value = parseInt(document.getElementById('number1').value, 10);
+    var value = parseInt(document.getElementById('number' + row).value, 10);
     value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number1').value = value;
+    value = value - modifier;
+    document.getElementById('number' + row).value = value;
 }
-function subValue2()
-{
-    var value = parseInt(document.getElementById('number2').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number2').value = value;
-}
-function subValue3()
-{
-    var value = parseInt(document.getElementById('number3').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number3').value = value;
-}
-function subValue4()
-{
-    var value = parseInt(document.getElementById('number4').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number4').value = value;
-}
-function subValue5()
-{
-    var value = parseInt(document.getElementById('number5').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number5').value = value;
-}
-function subValue6()
-{
-    var value = parseInt(document.getElementById('number6').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number6').value = value;
-}
-function subValue7()
-{
-    var value = parseInt(document.getElementById('number7').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number7').value = value;
-}
-function subValue8()
-{
-    var value = parseInt(document.getElementById('number8').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number8').value = value;
-}
-function subValue9()
-{
-    var value = parseInt(document.getElementById('number9').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number9').value = value;
-}
-
-</script>
-<script>
-function addValue1()
-{
-    var value = parseInt(document.getElementById('number1').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number1').value = value;
-}
-function addValue2()
-{
-    var value = parseInt(document.getElementById('number2').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number2').value = value;
-}
-function addValue3()
-{
-    var value = parseInt(document.getElementById('number3').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number3').value = value;
-}
-function addValue4()
-{
-    var value = parseInt(document.getElementById('number4').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number4').value = value;
-}
-function addValue5()
-{
-    var value = parseInt(document.getElementById('number5').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number5').value = value;
-}
-function addValue6()
-{
-    var value = parseInt(document.getElementById('number6').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number6').value = value;
-}
-function addValue7()
-{
-    var value = parseInt(document.getElementById('number7').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number7').value = value;
-}
-function addValue8()
-{
-    var value = parseInt(document.getElementById('number8').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number8').value = value;
-}
-function addValue9()
-{
-    var value = parseInt(document.getElementById('number9').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 5;
-    document.getElementById('number9').value = value;
-}
-
-
-function reduceValue1()
-{
-    var value = parseInt(document.getElementById('number1').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number1').value = value;
-}
-function reduceValue2()
-{
-    var value = parseInt(document.getElementById('number2').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number2').value = value;
-}
-function reduceValue3()
-{
-    var value = parseInt(document.getElementById('number3').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number3').value = value;
-}
-function reduceValue4()
-{
-    var value = parseInt(document.getElementById('number4').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number4').value = value;
-}
-function reduceValue5()
-{
-    var value = parseInt(document.getElementById('number5').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number5').value = value;
-}
-function reduceValue6()
-{
-    var value = parseInt(document.getElementById('number6').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number6').value = value;
-}
-function reduceValue7()
-{
-    var value = parseInt(document.getElementById('number7').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number7').value = value;
-}
-function reduceValue8()
-{
-    var value = parseInt(document.getElementById('number8').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number8').value = value;
-}
-function reduceValue9()
-{
-    var value = parseInt(document.getElementById('number9').value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - 10;
-    document.getElementById('number9').value = value;
-}
-   
 </script>
