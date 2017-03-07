@@ -1,7 +1,71 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=1080">
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number1").val("0");
+    });
+});
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number2").val("0");
+    });
+});
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number3").val("0");
+    });
+});
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number4").val("0");
+    });
+});
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number5").val("0");
+    });
+});
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number6").val("0");
+    });
+});
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number7").val("0");
+    });
+});
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number8").val("0");
+    });
+});
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#number9").val("0");
+    });
+});
+</script>
+</head>
+<body>
+<div class = "static30">
+ <input type="button" value="Clear all scores" id="btn3" class="test"/>
+
+</div>
+</body>
+
+
+<meta name="viewport" content="width=10px">
 <style>
+body {
+   transform: scale(0.40);
+   transform-origin: 0 0;
+}
 body    {overflow-y:scroll;}
 body    {overflow-x:scroll;}
 .test{
@@ -71,7 +135,7 @@ div.static9 {
     top: 350px;
 }div.pass {
     position: fixed;
-    left: 465px;
+    left: 340px;
     top: 600px;
     font-size: pt;
 
@@ -185,6 +249,12 @@ div.static29 {
     left: 990px;
     top: 530px;
 }
+div.static30 {
+    position: fixed;
+    left: 680px;
+    top: 600px;
+
+}
 </style>
 <style>
 div.bleh1 {
@@ -251,8 +321,6 @@ div.column3 {
     top: 50px;
 }
 </style>
-<style>
-</style>
 <div class="column1">
 <p><b>Name</b></p>  
 </div>
@@ -317,6 +385,7 @@ div.column3 {
     <input type="button" value="Reduce by 10" onclick="modifyValue(5, 10);" class="test" /></div>
 <div class="pass">
    <input type="button" class="my" value="End intiative pass" onclick="for (i=1; i<10; i++) { modifyValue(i, 10); };" />
+   
 <div class="static">
     <input type="number" id="number1" name="quantity" class="mytext"  ><br></div>
 <div class="static1">
@@ -335,15 +404,6 @@ div.column3 {
     <input type="number" id="number8" name="quantity"class="mytext"  ><br></div>
 <div class="static8">
     <input type="number" id="number9" name="quantity"class="mytext"  ><br></div>
+</div>
 
-</form>
-</html>
-<script>
-function modifyValue(row, modifier)
-{
-    var value = parseInt(document.getElementById('number' + row).value, 10);
-    value = isNaN(value) ? 0 : value;
-    value = value - modifier;
-    document.getElementById('number' + row).value = value;
-}
-</script>
+
