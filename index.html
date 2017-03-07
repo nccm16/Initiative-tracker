@@ -407,3 +407,15 @@ div.column3 {
 </div>
 
 
+</form>
+</html>
+
+<script>
+function modifyValue(row, modifier)
+{
+    var value = parseInt(document.getElementById('number' + row).value, 10);
+    value = isNaN(value) ? 0 : value;
+    value = value - modifier;
+    document.getElementById('number' + row).value = value;
+}
+</script>
